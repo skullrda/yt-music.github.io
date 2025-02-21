@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 	<meta name="referrer" content="origin" /> -->
+  <meta name="referrer" content="noreferrer" />
+
+	<link rel="stylesheet" href="css/inicio.css">
+	<link rel="stylesheet" href="css/player.css">
+	
+	<title>Musica Youtube</title>
+		
+</head>
+<body>
+
+	<div class="grid-container">
+			<div class="item item1"><span class="titulo">Musica en Vivo Youtube</span></div>
+			<div class="item item2">
+				<div class="fecha-container">
+					<div id="fecha"></div>
+					<div id="reloj"></div>
+				</div>
+			</div>
+	</div>
+
+	<!-- CSS Panel Contenedor -->
+	<div class="panel-container">
+		<!-- Estilo Trance Techno -->
+		<div class="css-panel">
+			<h3>Trance Techno</h3>
+			<ul id="lista-trance" class="efecto-01">
+		</div>
+		<!-- Estilo Party Dance Pop 80s90s -->
+		<div class="css-panel">
+			<h3>Party Dance Pop 80s90s</h3>
+			<ul id="lista-80s90s" class="efecto-01">
+		</div>
+		<!-- Estilo Relax-Chillout-Deep -->
+		<div class="css-panel">
+			<h3>Relax Chillout Deep</h3>
+			<ul id="lista-relax" class="efecto-01">
+		</div>		
+	</div>
+
+    <!-- Fondo oscuro -->
+    <div id="overlay"></div>
+		
+    <!-- Ventana flotante Pagina -->
+    <div id="ventana-pagina">
+        <button id="cerrar-pagina">X</button>
+        <iframe id="frame-pagina" src="" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+    </div>				
+
+</body>
+	<script src="js/funsiones.js"></script>
+	<script src="js/player.js"></script>
+</html>

@@ -1,0 +1,83 @@
+body {background-color: #222;font-family: Arial, sans-serif;margin: 0 20px;}
+
+/* Estilo grilla del contenedor */
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%; /* Definimos las tres columnas con diferentes anchos */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 10px;
+}
+
+/* Estilo básico para los elementos dentro del grid */
+.item {background-color: #222; color: white; text-align: left;}
+
+/* Personalización de cada columna */
+.item1 {background-color: #222;}
+.item2 {background-color: #222;text-align: right;}
+
+.titulo {
+	  font-size: 26px;
+		font-weight: bold;
+		background: #8DA399;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		text-shadow: 0px 3px 3px rgba(0,0,0,0.6);
+		color: transparent;
+		text-transform: uppercase;
+}
+
+.panel-container {display: flex;gap: 20px; background-color: #222;}
+
+.css-panel {
+	width: 250px;
+	padding: 14px;
+  background-color: rgba(50, 50, 50, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.css-panel h3 {
+  padding: 4px 4px;
+	margin: 0;
+  font-size: 18px;
+  color: #FDF5E6;
+  border-radius: 5px;
+  border-bottom: 2px #666 solid;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.css-panel ul {list-style-type: none;padding: 0;}
+
+.css-panel li {margin-bottom: 6px;padding: 0 5px;}
+.css-panel li a:link {text-decoration: none;color: #50C878;}
+.css-panel li a:hover {color: #FFF;}
+.css-panel li a:visited {color: #F07427;}
+
+#fecha {font-size: 1em;color: #F0EAD6;}
+#reloj {font-size: 1em;color: #50C878;}
+
+/* Estilo para el elemento seleccionado */
+.seleccionado {
+	background: rgb(0, 66, 66, 1);
+  backdrop-filter: blur(10px);
+  border-radius: 6px;
+}
+
+.efecto-01 a:hover {
+	-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .2) 30%, #000 50%, rgba(0, 0, 0, .2) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 0.8s infinite;
+	transition: 0.35s;
+}
+
+@-webkit-keyframes shine {
+	from {
+		-webkit-mask-position: 150%;
+	}
+	to {
+		-webkit-mask-position: -50%;
+	}
+}

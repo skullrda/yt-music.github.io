@@ -1,0 +1,50 @@
+#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: none;
+		z-index: 999;
+}
+
+/* Estilo para la ventana flotante Pagina */
+#ventana-pagina {
+	  overflow: hidden;
+		position: fixed;
+		aspect-ratio: 16/9;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 60%;
+		height: 60%;
+		background-color: #000;
+		border: 2px solid #ccc;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		display: none;
+		z-index: 1000;
+}
+
+#ventana-pagina iframe {
+		display: flex;
+		width: 300%;
+		height: 100%;
+		border: none;
+		margin-left: -100%;
+		border-radius: 10px 10px;
+}
+
+#ventana-pagina button {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		background-color: red;
+		color: white;
+		border: none;
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+}
